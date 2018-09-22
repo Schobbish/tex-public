@@ -6,6 +6,9 @@
 \title{AP Physics 1 Equations}
 \author{}
 \date{}
+% I have been informed that "symbols used as subscripts and superscripts are
+% roman if descriptive" but they can be "italic if they represent quantities
+% or variables" (including x and y for direction) (source: nist.gov).
 
 \begin{document}
     \maketitle
@@ -14,10 +17,10 @@
     \newpage
     \section{Kinematics}
         \subsection*{Variables in this Section}
-            In this section, a variable with subscript $f$ indicates the final
-            value, and a variable with subscript $i$ indicates the initial
-            value. The exam does not use the $f$ subscript (i.e., there is no
-            subscript on a final quantity), and instead of an $i$ subscript it
+            In this section, a variable with subscript f indicates the final
+            value, and a variable with subscript i indicates the initial
+            value. The exam does not use the f subscript (i.e., there is no
+            subscript on a final quantity), and instead of an i subscript it
             uses a $0$ (zero/naught) subscript.
 
             The arrow above a variable indicates a vector quantity. The exam
@@ -29,18 +32,19 @@
                 \item[$\vec{a}$] is acceleration. Given as $a_x$ or $a_y$ on
                 the exam depending on the dimension of travel.
                 \item[$\vec{a}_g$] is acceleration due to gravity at Earth's
-                surface, and is equal to $9.8\, \frac{\text{m}}{\text{s}^2}$.
-                On the exam this is given as $g$.
+                surface, and is equal to $-9.8\, \frac{\text{m}}{\text{s}^2}$.
+                On the exam this is given as
+                $g = 9.8\, \frac{\text{m}}{\text{s}^2}$.
                 \item[$\Delta \vec{d}$] is displacement. The exam uses $x$ and
                 $y$ variables, so $x - x_0$ will be used instead of $\Delta
                 \vec{d}$ on the exam.
                 \item[$t$] is time. Thus, $\Delta t$ is change in time and is
-                equal to $t_f - t_i$. The $\Delta$ is optional and is not used
-                on the exam.
+                equal to $t_\textup{f} - t_\textup{i}$. The $\Delta$ is
+                optional and is not used on the exam.
                 \item[$\vec{v}$] is velocity. Thus, $\Delta \vec{v}$ is change
-                in velocity and is equal to $\vec{v}_f - \vec{v}_i$. Given as
-                $v_x$ or $v_y$ on the exam depending on the dimension of
-                travel.
+                in velocity and is equal to
+                $\vec{v}_\textup{f} - \vec{v}_\textup{i}$. Given as $v_x$ or
+                $v_y$ on the exam depending on the dimension of travel.
             \end{description}
         \subsection*{Equations}
             Definition of acceleration as the rate of change of velocity.
@@ -52,7 +56,7 @@
             Velocity equation for an object with constant acceleration.
             Given as $v_x = v_{x0} + a_xt$ on the exam.
             \begin{equation}
-                \vec{v}_f = \vec{v}_i + \vec{a}\Delta t
+                \vec{v}_\textup{f} = \vec{v}_\textup{i} + \vec{a}\Delta t
             \end{equation}
 
             Position equation for an object with constant acceleration.
@@ -61,13 +65,14 @@
             which is equal to $\Delta\vec{d}$.
             \begin{equation}
                 \Delta \vec{d} =
-                \vec{v}_i\Delta t + \frac{1}{2}\vec{a}\Delta t^2
+                \vec{v}_\textup{i}\Delta t + \frac{1}{2}\vec{a}\Delta t^2
             \end{equation}
 
             Equation relating velocity and displacement for
             constant-acceleration motion. Given as
             $v^2_x = v^2_{x0} + 2a_x(x - x_0)$ on the exam.
             \begin{equation}
-                \vec{v}^2_f = \vec{v}^2_i + 2\vec{a}\Delta\vec{d}
+                \vec{v}^2_\textup{f} =
+                \vec{v}^2_\textup{i} + 2\vec{a}\Delta\vec{d}
             \end{equation}
 \end{document}
