@@ -1,0 +1,92 @@
+\documentclass{article}
+\usepackage{textcomp}
+\usepackage{amsmath}
+\usepackage{physics}
+
+\numberwithin{equation}{section}
+
+\title{PHYS 2325 Equations}
+\author{}
+\date{}
+% I have been informed that "symbols used as subscripts and superscripts are
+% roman if descriptive" but they can be "italic if they represent quantities
+% or variables" (including x and y for direction) (source: nist.gov).
+
+\begin{document}
+    \maketitle
+    \tableofcontents
+
+    \newpage
+    \section{Kinematics}
+        \subsection*{Some Constant Acceleration Equations}
+            Surprisingly enough, these equations apply when acceleration is constant, such as when you drop something.
+            \begin{equation}
+                v = v_0 + at
+            \end{equation}
+            \begin{equation}
+                \Delta x = v_0t + \frac{1}{2}at^2
+            \end{equation}
+            \begin{equation}
+                v^2 = v_0^2 + 2a\Delta x
+            \end{equation}
+            \begin{equation}
+                \Delta x = \frac{1}{2}(v_0 + v)t
+            \end{equation}
+
+        \subsection*{3D motion}
+            You should also be able to find displacement, velocity, and acceleration in 3D using vectors, e.g.
+
+            \begin{equation}
+                \Delta \vec{r} = \vec{r}_2 - \vec{r}_1 =
+                (x_2 - x_1)\hat{i} + (y_2 - y_1)\hat{j} + (z_2 - z_1)\hat{k}
+            \end{equation}
+            \begin{equation}
+                \vec{v}_{\mathrm{ave}} = \frac{\Delta\vec{r}}{\Delta t}
+            \end{equation}
+            \begin{equation}
+                \vec{v} = \dv{r}{t} =
+                \dv{x}{t}\hat{i} + \dv{y}{t}\hat{j} + \dv{z}{t}\hat{k}
+            \end{equation}
+            And similarly with $\vec{a}$.
+
+        \subsection*{Circular motion}
+            Particle goes in circle.
+            \begin{equation}
+                a_{\mathrm{radial}} = \frac{v^2}{r}
+            \end{equation}
+            $a_{\mathrm{radial}}$ refers to the component of acceleration which is perpendicular to velocity (i.e. pointing inwards) and gives the change in direction. This applies to uniform circular motion and non-uniform circular motion.
+            \begin{equation}
+                a_{\mathrm{tan}} = \dv{|\vec{v}|}{t}
+            \end{equation}
+            $a_{\mathrm{tan}}$ refers to the component of acceleration which is parallel to velocity and gives the change in speed. In uniform circular motion, this value is zero.
+            \begin{equation}
+                T = \frac{2\pi r}{v}
+            \end{equation}
+            Just a reminder that $T$, the period, is the time it takes for the particle to complete one revolution of the circle. It is the reciprocal of frequency.
+
+        \subsection*{Projectile motion}
+            These equations are typically used in 2D motion where one component has constant acceleration and the other component has zero acceleration and there is some initial velocity. They describe a parabolic trajectory with equation:
+            \begin{equation}
+                y(x) = x\tan(\theta) - \frac{ax^2}{2v_0^2\cos^2(\theta_0)}
+            \end{equation}
+            Note that in these equations it is assumed that the $y$-component of motion has the constant acceleration because of gravity.
+
+            I don't think these equations are that helpful since they just do the component finding for you but here they are anyway:
+            \begin{equation}
+                x(t) = (v_0cos(\theta))t
+            \end{equation}
+            \begin{equation}
+                y(t) = (v_0sin(\theta))t - \frac{1}{2}at^2
+            \end{equation}
+
+            Max height of projectile motion. This will not be given in the exam.
+            \begin{equation}
+                h = \frac{v_0^2\sin^2 \theta_0}{2a}
+            \end{equation}
+
+            Max range (how far it goes horizontally). This will also not be given in the exam.
+            \begin{equation}
+                x_\mathrm{max} = \frac{v_0^2}{a}\sin(2\theta_0)
+            \end{equation}
+            Shows that the range is maximized when the launch angle $\theta_0 = 45\text{\textdegree}$.
+\end{document}
